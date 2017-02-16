@@ -1,0 +1,37 @@
+*Quantifier
+{n} - exatamente n vezes
+{n, } - no minimo n vezes
+{n, m} - no minimo n no maximo m
+? - zero ou mais vezes
++ - uma ou mais vezes
+* - zero ou mais vezes
+
+*Classes de char
+[A-Z] - letras de A ate Z
+[123] - 1, 2 ou 3
+\d - todos os digitos
+\s - whitespace
+\w - wordchar
+
+*Ancoras
+\b - é uma âncora que seleciona um word boundary,
+     isso é o início ou fim da palavra.
+^ - é uma âncora que selecione o início da string alvo
+$ - é uma âncora que selecione o fim do alvo.
+
+*Grupos
+() - Grupo
+(?:) - Grupo, porém não faz parte do resultado(Non-capturing group)
+
+
+super.mario@caelum.com.br
+([a-z.]{5,15}\d?)@(?:caelum.com.br|alura.com.br)
+super.mario@caelum.com.br ||| super.mario
+
+
+([A-Z][a-z]+\s[A-Z][a-z]+)
+
+*Capitulo 5
+-Colocando ? após o quantifier, deixamos ele preguiçoso 
+-Com \n podemos referenciar um texto de um grupo dentro da regex
+-n é o numero do grupo
